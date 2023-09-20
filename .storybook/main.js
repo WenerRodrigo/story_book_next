@@ -1,6 +1,5 @@
-import type { StorybookConfig } from "@storybook/nextjs";
 
-const config: StorybookConfig = {
+module.exports = {
   stories: [
     "../stories/**/*.stories.mdx",
     "../src/**/*.stories.mdx",
@@ -14,9 +13,5 @@ const config: StorybookConfig = {
   framework: {
     name: "@storybook/nextjs",
     options: {},
-  },
-  docs: {
-    autodocs: "tag",
-  },
-};
-export default config;
+  }
+}
